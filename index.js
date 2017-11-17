@@ -10,7 +10,15 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
-  response.render('metlook/index');
+  var baseFrame = 
+    {title: 'Web Site Owner',
+     UserName: 'Tharindu Madushanka',
+     SiteName: ['AB.lk'],
+     userImage:'images/user.png'
+    
+    };
+
+  response.render('metlook/index',baseFrame);
 });
 
 
