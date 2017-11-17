@@ -12,8 +12,8 @@ app.set('view engine', 'ejs');
 app.get('/', function(request, response) {
   var baseFrame = 
     {title: 'Web Site Owner',
-     UserName: 'Tharindu Madushanka',
-     SiteName: ['AB.lk'],
+     userName: 'Tharindu Madushanka',
+     siteName: ['AB.lk','bc.lk'],
      userImage:'images/user.png'
     
     };
