@@ -7,56 +7,14 @@
     <% include partials/page_loader.ejs %>
     <!-- Overlay For Sidebars -->
     <div class="overlay"></div>
-   <!-- Top Bar -->
-    <nav class="navbar">
-        <div class="container-fluid">
-            <div class="navbar-header">
-              <a href="javascript:void(0);" class="bars"></a>
-              <a class="navbar-brand" href="#">PIXSELL - W  <%= baseFrame.title %></a>
-            </div>
-        </div>
-    </nav>
+    <!--Search bar-->
+    <% include partials/search_bar.ejs %>
+   
+    <!-- Top Bar -->
+    <% include partials/navigation.ejs %>
     
     <!-- Left side bar -->
-    <section>
-            <!-- Left Sidebar -->
-            <aside id="leftsidebar" class="sidebar">
-                <!-- User Info -->
-                <div class="user-info"> 
-                    <div class="info-container">
-                    </div>
-                </div>
-                <!-- #User Info -->
-                <!-- Menu -->
-                <div class="menu">
-                    <ul class="list">
-                        <li class="header">Welcome to PIXSELL</li>
-        
-                        <% sideMenu.forEach(function(site) { %>
-                            <li class=<%=site.state %> >
-                                <a href=<%=site.link %> >
-                                    <i class="material-icons"><%=site.icon %></i>
-                                    <span><%=site.name %></span>
-                                </a>
-                            </li>
-                        <%}); %>
-                    </ul>
-                </div>
-                <!-- #Menu -->
-                <!-- Footer -->
-                <div class="legal">
-                    <div class="copyright">
-                        &copy; 2017 <a href="javascript:void(0);">PIXSELL - Legator Solutions</a>.
-                    </div>
-                    <div class="version">
-                        <b>Version: </b> 0.1
-                    </div>
-                </div>
-                <!-- #Footer -->
-            </aside>
-            <!-- #END# Left Sidebar -->
-        </section>
-        
+    <% include partials/left_sidebar.ejs %>
 
     <section class="content">
         <div class="container-fluid">
