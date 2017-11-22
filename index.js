@@ -42,7 +42,7 @@ app.get('/webSiteOwner', function(request, response) {
       {name:'Earnings',icon:'monetization_on',link:'earnings'}
     ]
 
-  response.render('metlook/index',{baseFrame:baseFrame,sideMenu:sideMenu});
+  response.render('metlook/pages/webSiteOwner',{baseFrame:baseFrame,sideMenu:sideMenu});
 });
 
 app.listen(app.get('port'), function() {
