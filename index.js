@@ -19,9 +19,9 @@ app.get('/', function(request, response) {
     };
   var sideMenu =
     [
-      {name:'About',icon:'home',link:'about',state:'active'},
-      {name:'Concept',icon:'layers',link:'concept'},
-      {name:'Legator',icon:'layers',link:'legator'}
+      {name:'About',icon:'home',link:'#',state:'active'},
+      {name:'Concept',icon:'layers',link:'#'},
+      {name:'Legator',icon:'layers',link:'#'}
     ]
 
   response.render('metlook/index',{baseFrame:baseFrame,sideMenu:sideMenu});
