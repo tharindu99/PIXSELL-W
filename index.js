@@ -41,8 +41,15 @@ app.get('/webSiteOwner', function(request, response) {
       {name:'RegisteAd-block',icon:'layers',link:'reg_adblock'},
       {name:'Earnings',icon:'monetization_on',link:'earnings'}
     ]
+  var TopPanel = 
+    [
+      {name:'Active Blocks',icon:'dashboard',value:5,color:'bg-pink'},
+      {name:'Sold Blocks',icon:'view_quilt',value:2,color:'bg-cyan'},
+      {name:'Micro Investments',icon:'donut_small',value:'34%',color:'bg-light-green'},
+      {name:'Expect Income',icon:'attach_money',value:'40%',color:'bg-orange'}
+    ]
 
-  response.render('metlook/pages/webSiteOwner',{baseFrame:baseFrame,sideMenu:sideMenu});
+  response.render('metlook/pages/webSiteOwner/webSiteOwner',{baseFrame:baseFrame,sideMenu:sideMenu,topPanel:TopPanel});
 });
 
 app.listen(app.get('port'), function() {
