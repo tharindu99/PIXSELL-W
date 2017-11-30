@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 
 app.use('/webSiteOwner',require('./webSiteOwner'))
+app.use('/adClient',require('./adClient'))
 
 app.get('/', function(request, response) {
     
